@@ -84,6 +84,62 @@
     color:white;
 }
 
+ul li ul.dropdown li {
+    /* display: block;  */
+    /* background-color: aqua; */
+    margin: 2px opx;
+    text-align: left;
+    color: black;
+    font-style: italic;
+    margin-top: 5px;
+    /* background-color: rgb(122, 122, 220); */
+    font-size: 18px;
+
+}
+
+.j1 {
+    width: 120px;
+    /* border:2px solid red; */
+
+}
+
+ul li ul.dropdown li a {
+    color: black;
+    text-align: left;
+
+}
+
+ul li ul.dropdown li a:hover {
+    color: red;
+}
+
+ul li ul.dropdown {
+    margin-top: 3px;
+    width: 135px;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.j1::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    transition: width .3;
+}
+
+.j1:hover::after {
+    width: 70%;
+    transition: width .5s;
+}
+
 .line::after{
     content: '';
     display: block;

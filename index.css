@@ -190,7 +190,7 @@ a{
 
 #car{
     height: auto;
-    border: green solid 2px;
+    /* border: green solid 2px; */
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -210,14 +210,14 @@ a{
 }
 .data1{
     height: 400px;
-    border: black solid 2px;
+    /* border: black solid 2px; */
     width: 45%;
     text-align: center;
     
 }
 .data2{
     height: 400px;
-    border: blueviolet solid 2px;
+    /* border: blueviolet solid 2px; */
     width: 55%;
     text-align: center;
     padding-top: 80px;
@@ -225,20 +225,20 @@ a{
 }
 .data3{
     height: 300px;
-    border: black solid 2px;
+    /* border: black solid 2px; */
     width: 45%;
     text-align: center;
 }
 .data4{
     height: 300px;
-    border: black solid 2px;
+    /* border: black solid 2px; */
     width: 55%;
     text-align: center;
 }
 
 #cars{
     height: auto;
-    border: green solid 2px;
+    /* border: green solid 2px; */
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -259,7 +259,7 @@ a{
 
 .datas1{
     height: 400px;
-    border: black solid 2px;
+    /* border: black solid 2px; */
     width: 55%;
     text-align: center;
     padding-top: 80px;
@@ -267,19 +267,19 @@ a{
 }
 .datas2{
     height: 400px;
-    border: blueviolet solid 2px;
+    /* border: blueviolet solid 2px; */
     width: 45%;
     text-align: center;
 }
 .datas3{
     height: 300px;
-    border: black solid 2px;
+    /* border: black solid 2px; */
     width: 55%;
     text-align: center;
 }
 .datas4{
     height: 300px;
-    border: black solid 2px;
+    /* border: black solid 2px; */
     width: 45%;
     text-align: center;
 }
@@ -311,10 +311,10 @@ a{
     height: auto;
     display: flex;
     justify-content: space-around;
-    background-color: gray;
+    background-color: lightgray;
 }
 
 .last1 li a{
     text-decoration: none;
-    color: white;
+    /* color: white; */
 }

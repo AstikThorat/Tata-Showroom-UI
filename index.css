@@ -34,6 +34,10 @@
   
 } 
 
+.latest{
+    margin-left: 60px;
+}
+
 .carousel > .carousel-inner > .carousel-item > img{
     width:240px; 
     height:750px;
@@ -68,7 +72,7 @@
     display: flex;
     justify-content: space-around;
     /* border: blue solid 3px; */
-    padding-top:15px;
+    padding-top:25px;
     margin-left: 200px;
     font-size: 18px;
     

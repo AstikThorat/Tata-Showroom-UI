@@ -311,10 +311,10 @@ a{
     height: auto;
     display: flex;
     justify-content: space-around;
-    background-color: gray;
+    background-color: lightgray;
 }
 
 .last1 li a{
     text-decoration: none;
-    color: white;
+    /* color: white; */
 }

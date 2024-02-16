@@ -1,0 +1,472 @@
+<html lang="en">
+
+<head>
+    <title>Electric Cars</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #header {
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("electric-car-bg.jpg");
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            background-image: center;
+            height: 100%;
+        }
+
+        nav {
+            display: flex;
+            padding: 0% 2%;
+            justify-content: space-between;
+            align-items: center;
+            background: #070c57;
+            box-shadow: 3px 6px 6px #0000;
+        }
+
+        .menu-bar {
+            background: #070c57;
+            text-align: right;
+            justify-content: space-evenly;
+        }
+
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        }
+
+        .menu-bar ul input[type=text] {
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 0px;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            width: 100%;
+        }
+
+
+        .menu-bar ul input[type=button] {
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 0px;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            width: 10%;
+        }
+
+        .menu-bar ul li {
+            width: 75px;
+            margin: 15px;
+            padding: 15px;
+
+        }
+
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: white;
+            box-shadow: 3px 3px 10px #000000;
+            border-radius: 6px;
+            margin-right: 50px;
+        }
+
+        .menu-bar ul li a:hover {
+            background-color: #40e0d0;
+            border-radius: 5px;
+            transition: 1s;
+        }
+
+        .text-box {
+            width: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text-box h1 {
+            font-size: 62px;
+            color: white;
+            text-shadow: 3px 3px 10px #000000;
+        }
+
+        .text-box h2 {
+            font-size: 20px;
+            color: #40e0d0;
+        }
+
+        .text-box p {
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            color: white;
+            border: 1px solid white;
+            background: transparent;
+            text-decoration: none;
+            font-size: 13px;
+            padding: 12px 34px;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 3px 3px 6px #40e0d0;
+        }
+
+        .button:hover {
+            border: 1px solid rgb(150, 104, 5);
+            background: #40e0d0;
+            transition: 1s;
+        }
+
+        .varieties {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            padding: 10px;
+            line-height: 22px;
+        }
+
+        .row {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cols {
+            background: transparent;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 5%;
+            flex-basis: 45%;
+            box-shadow: 3px 6px 9px cyan;
+            transition: 0.5s;
+        }
+
+        .cols:hover {
+            box-shadow: 0 0 20px 0px rgba(102, 127, 255);
+        }
+
+        .footer {
+            background: black;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 40px 0 20px;
+            width: 100%;
+            height: 60%;
+        }
+
+        .footer p {
+            color: 8a8a8a;
+        }
+
+        .footer h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .cols-2 h3 {
+            color: #40e0d0;
+        }
+
+        .cols-1,
+        cols-2,
+        cols-3,
+        cols-4 {
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .cols-1 {
+            flex-basis: 50%;
+            font-size: 20px;
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        .cols-2 {
+            flex-basis: 50%;
+            font-size: 12px;
+            /* align-atems:left; */
+        }
+
+        .cols-3 {
+            flex-basis: 60%;
+            font-size: 20px;
+        }
+
+        .cols-4 {
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .container {
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
+            flex-basis: 20%;
+        }
+
+        .swing {
+            animation: swing ease-in-out 2s infinite alternate;
+            transform-origin: center -20px;
+            float: left;
+            box-shadow: 5px 5px 10px black;
+            display: flex;
+        }
+
+        .swing::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 2ps solid #999;
+            top: -10px;
+            left: 50%;
+            border-bottom: none;
+            border-right: none;
+            transform: rotate(45deg);
+        }
+
+        .swing::before {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50% 50%;
+            top: -14px;
+            left: 54%;
+            background: black;
+        }
+
+        .swing img {
+            border: 5px solid #f8f8f8;
+            display: block;
+        }
+
+        @keyframes swing {
+            0% {
+                transform: rotate(10deg);
+            }
+
+            100% {
+                transform: rotate(-10deg);
+            }
+        }
+
+        .team {
+            text-align: center;
+            text-shadow: 3px 6px 9px cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="header">
+        <nav>
+            <h1 style="color:white"><img class="logo-img" src="car_logo.png" width="20%" height="20%">eFuel Car</h1>
+            <div class="menu-bar">
+                <ul>
+                    <input type="text" placeholder="Type here to search">
+                    <input type="button" placeholder="Search">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-box">
+            <h1>Electric Car Zone</h1>
+            <h2><u><em>EV-Charging & Car Services</u></em> </h2><br><br><br>
+            <p>Welcome to Electric car.com, you are viewing information for visitors in India.<br>
+                The list of Electric cars in India include Tata Nexon EV (₹ 13.99 Lakh), MG ZS EV (₹ 21.00 Lakh) and
+                Tata Tigor EV (₹ 10.58 Lakh). <br>
+                Check out the latest prices, images, reviews & specifications of the Electric cars.
+            </p><br><br>
+            <a href="register.html" class="button">Register Here</a>
+        </div>
+    </section>
+    <section class="varieties">
+        <h1>Different companies</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad accusantium, magni exercitationem error sed
+            asperiores nobis nisi laudantium, recusandae ullam fuga minus maiores molestias placeat modi cumque
+            architecto. Natus, rem!</p>
+
+        <div class="row">
+            <div class="cols">
+                <h3>Tesla</h3>
+                <p>If you are an automotive enthusiast then you know it goes without saying that indeed the best
+                    electric car company is Tesla. Not only among EV makers, but Tesla is the world’s most valuable
+                    automaker with an overall net worth of around $650 billion.
+                    Founded in July 2003, Tesla is a California based electric vehicles car company. At present, it has
+                    four electric cars in its portfolio: Tesla Model S, Model X, Model 3, and Model Y.
+                    The Tesla Model S and Model 3 are sedans, whereas Model X is a full-size SUV, and Model Y is a
+                    crossover SUV. Currently, Tesla dominates the EV market with the Model 3 being the best selling
+                    electric car in the world and the Model S as the longest range electric car.
+                    The automaker plans to launch its sports car Tesla Roadster and one electric pickup truck Cybertruck
+                    in the future. Tesla is mostly famous for its EV technology including excellent specs, autonomous
+                    driving technology, and its network.
+                    Tesla’s electric cars are available in most of the major countries including the US, Canada,
+                    European countries, China, Australia, and much more.</p>
+            </div>
+            <div class="cols">
+                <h3>Jaguar</h3>
+                <p>The Jaguar I-Pace (stylised as "I-PACE") is a battery-electric crossover SUV produced by Jaguar Land
+                    Rover (JLR), the British subsidiary of the Indian automotive company Tata, under their Jaguar
+                    marque. The I-Pace was announced in March 2018, European deliveries began in June 2018, North
+                    American deliveries started in October 2018, and Indian deliveries began in March 2021. As of May
+                    28, 2021, the 2021 model year I-Pace has not been brought to the United States, despite having been
+                    introduced in Europe nearly one year ago</p>
+                The I-Pace is the first electric SUV from a premium European automaker. In its first year, the I-Pace
+                became one of the most highly decorated production cars ever, winning 62 international awards. In March
+                2019, the I-Pace won the European Car of the Year award, the first Jaguar to win in the 50-year history
+                of the award.In April 2019, the I-Pace became the 2019 World Car of the Year, and by also winning Best
+                Design and Best Green Car awards, it became the first car to ever sweep three of the six categories.
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cols">
+                <h3>Mahindra Electric</h3>
+                <p>Mahindra is the pioneer for EV in the Indian space. Being the first major EV manufacturer it launched
+                    Mahindra Reva, its first EV as early as 2001. The Mahindra Reva was India’s first electric car. Over
+                    the years Mahindra has gone ahead to set up a dedicated R&D center in Bengaluru.
+                    Some of its other EV variants include the Mahindra E20 and eVerito. Mahindra however has not only
+                    focussed on the manufacture of EV’s but also battery packs and has partnered with various
+                    institutions in order to boost EV charging</p>
+            </div>
+            <div class="cols">
+                <h3>TATA Motors</h3>
+                <p>Tata is Indias biggest automobile manufacturer It automobile segment ranges from the manufacture of
+                    cars, utility vehicles, buses, trucks, and defense vehicles. Its associate companies include Jaguar
+                    Land Rover and Tata Daewoo. But when it comes to the EV segment Tata is a new entrant when compared
+                    to Mahindra.
+                    In India, Tata Motors has an industrial joint venture with Fiat. One of Tata’s major benefits has
+                    been its ability to use resources from around the world. Tata’s innovation efforts are focused on
+                    developing auto technologies that are sustainable as well as suited. With design and R&D centers
+                    located in India, the UK, Italy, and Korea. Tata Motors in collaboration with its subsidiary, the UK
+                    based Tata Motors European Technical Centre (TMETC), are looking to have a major play in the EVs
+                    market in India.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cols">
+                <h3>Hyundai</h3>
+                <p>Hyundai burst into the Indian EV segment with its launch of the Hyundai Kona EV in India. The South
+                    Korean global giant in the world of automobiles has stated that Kona was specifically designed to
+                    suit Indian operating conditions. One of the USP’s of the vehicle is its 452km range in one charge.
+                    This suited perfectly with Indians ‘Kitna Deti hai’ demand when it comes to vehicles.
+                    Just to put things in perspective the range difference of the Kona and other market leaders is in
+                    hundreds of kilometers. The Kona, however, has an Ex-showroom cost of Rs.23.8 lakhs making it
+                    extremely expensive for Indian markets. Addressing this Hyundai has however said that another EV is
+                    in developmental stages keeping affordability in mind in order to serve the mass market. This EV is
+                    expected to be ready to enter the market in the next 2-3 years.</p>
+            </div>
+            <div class="cols">
+                <h3>Ashok Leyland</h3>
+                <p>Ashok Leyland, the Hinduja Group’s flagship company, is the 4th largest bus manufacturer in the world
+                    and a market leader for trucks in India. The company has tied up with Sun Mobility in order to
+                    enhance its expertise in the vehicle domain.
+                    Ashok Leyland designs electric variants specifically for Indian conditions and has also introduced
+                    battery swapping in electric buses to address e-mobility needs in the country. It has launched
+                    multiple electric bus variants like the Circuit, HYBUS, Electric Euro 6 Truck, and announced the
+                    iBUS. The immediate focus of the company, however, is currently in giving more thrusts to exports.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <figure class="swing">
+            <h2><img src="jaguar.jpeg" width="200">Jaguar</h2>
+        </figure>
+
+        <figure class="swing">
+            <h2><img src="1teslaroadster.jpg" width="200">Tesla</h2>
+        </figure>
+
+        <figure class="swing">
+            <h2><img src="mahindra.jpeg" width="200">Mahindra Electric</h2>
+        </figure>
+
+        <figure class="swing">
+            <h2><img src="tata.jpeg" width="200">TATA Motors</h2>
+        </figure>
+    </section>
+    <br><br>
+    <br><br>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="cols-2">
+                        <h3><img src="car_logo.png" width="20%" height="30%">eFuel Car</h3>
+                        <br>
+                        <h4><u>For media inquiries, please email us at mediainquiries@efuel.org.<br>Range according to
+                                WLTP cycle. Driving range may vary slightly<br> depending on road conditions, your
+                                driving style and the temperature.<br> It is also is dependent on the type of tyres
+                                equipped. </u></h4>
+                    </div>
+
+                    <div class="cols-1">
+                        <ul>
+                            <li>Website terms and condition </li>
+                            <li> Privacy notice and policy </li>
+                            <li>Accessibility </li>
+                            <li> Side-map</li>
+                        </ul>
+                    </div>
+
+                    <div class="cols-3">
+                        <h3>Contact us</h3>
+                        <ul>
+                            <li> 022 7856 4885</li>
+                            <li>+91 78957 65985 </li>
+                            <li>efuel@gmail.com</li>
+                            <li>Contact in between 9AM to 10PM</li>
+                        </ul>
+                    </div>
+
+                    <div class="cols-4">
+                        <ul>
+                            <li>HOME</li>
+                            <li>TEAM</li>
+                            <li>GALLERY</li>
+                            <li>ABOUT</li>
+                            <li>CONTACT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h4 style="color:white" align="center">Copyright 2021-TCET-Inhouseinternship</h4>
+        </div>
+    </footer>
+
+</body>
+
+</html>

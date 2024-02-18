@@ -1,247 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-<style>
-*
-{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-}
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-#header
-{
-background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url("electric-car-bg.jpg");
-background-size: cover;
-font-family:'Times New Roman', Times, serif; 
-background-image:center;
-height: 100%;
-}
+        #header {
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("electric-car-bg.jpg");
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            background-image: center;
+            height: 100%;
+        }
 
-nav{
-display: flex;
-padding: 0% 2%;
-justify-content: space-between;
-align-items: center;
-background:#070c57 ;
-box-shadow: 3px 6px 6px #0000;
-}
+        nav {
+            display: flex;
+            padding: 0% 2%;
+            justify-content: space-between;
+            align-items: center;
+            background: #070c57;
+            box-shadow: 3px 6px 6px #0000;
+        }
 
-.menu-bar
-{
-background:#070c57 ;
-text-align:right;
-justify-content: space-evenly;
-}
+        .menu-bar {
+            background: #070c57;
+            text-align: right;
+            justify-content: space-evenly;
+        }
 
-.menu-bar ul
-{
-    display: inline-flex;
-    list-style: none;
-    color: #fff;
-    }
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        }
 
-.menu-bar ul input[type=text]
-{
-text-decoration: none;
-margin-top: 20px;
-margin-bottom: 20px;
-border-radius: 0px;
-cursor: pointer;
-font-family: 'Times New Roman', Times, serif;
-width: 50%;
-}
+        .menu-bar ul input[type=text] {
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 0px;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            width: 50%;
+        }
 
 
-.menu-bar ul input[type=button]
-{
-text-decoration: none;
-margin-top: 20px;
-margin-bottom: 20px;
-border-radius: 0px;
-cursor: pointer;
-font-family: 'Times New Roman', Times, serif;
-width: 10%;
-}
+        .menu-bar ul input[type=button] {
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 0px;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            width: 10%;
+        }
 
-.menu-bar ul li
-{
-width: 75px;
-margin:15px;
-padding:15px;
+        .menu-bar ul li {
+            width: 75px;
+            margin: 15px;
+            padding: 15px;
 
-}
+        }
 
-.menu-bar ul li a
-{
-text-decoration: none;
-color: white;
-box-shadow:3px 3px 10px #000000 ;
-border-radius: 6px;
-margin-right: 50px;
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: white;
+            box-shadow: 3px 3px 10px #000000;
+            border-radius: 6px;
+            margin-right: 50px;
 
-}
-.menu-bar ul li a:hover
-{
-    background-color:#40e0d0;
-border-radius: 5px;
-transition: 1s;
-}
-       
-      
-.row{
-margin-top:5%;
-display:flex;
-justify-content:space-between;
-}
+        }
 
-.footer{
-background:black;
-color:#8a8a8a;
-font-size:14px;
-padding:40px 0 20px;
-width:100%;
-height:20%;
-display:block;
-}
+        .menu-bar ul li a:hover {
+            background-color: #40e0d0;
+            border-radius: 5px;
+            transition: 1s;
+        }
 
-.footer p{
-color:8a8a8a;
-}
-.footer h3{
-color:white;
-margin-bottom:20px;
-}
 
-.cols-2 h3{
-color:#40e0d0;
-margin-left:0%;
-} 
+        .row {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
 
-.cols-1, cols-2, cols-3, cols-4{
-min-width:250px;
-margin-bottom:40px;
-} 
+        .footer {
+            background: black;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 40px 0 20px;
+            width: 100%;
+            height: 20%;
+            display: block;
+        }
 
-.cols-1{
-flex-basis:40%;
-font-size:20px;
-color:white;
-padding:20px;
-text-decoration:none;
-}
-.cols-2{
-flex-basis:40%;
-font-size:12px;
-/* align-atems:left; */
-}
+        .footer p {
+            color: 8a8a8a;
+        }
 
-.cols-3{
-flex-basis:50%;
-font-size:20px;
-}
+        .footer h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
 
-.cols-4{
-flex-basis:30%;
-font-size:20px;
-text-decoration:none;
-}
+        .cols-2 h3 {
+            color: #40e0d0;
+            margin-left: 0%;
+        }
 
-h1{
-text-shadow:3px 4px 6px cyan;
-font-size:80px;
-}
-</style>
+        .cols-1,
+        cols-2,
+        cols-3,
+        cols-4 {
+            min-width: 250px;
+            margin-bottom: 40px;
+        }
+
+        .cols-1 {
+            flex-basis: 40%;
+            font-size: 20px;
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        .cols-2 {
+            flex-basis: 40%;
+            font-size: 12px;
+            /* align-atems:left; */
+        }
+
+        .cols-3 {
+            flex-basis: 50%;
+            font-size: 20px;
+        }
+
+        .cols-4 {
+            flex-basis: 30%;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        h1 {
+            text-shadow: 3px 4px 6px cyan;
+            font-size: 80px;
+        }
+    </style>
 </head>
+
 <body background="electric-car-bg.jpg" style="background-size: cover;">
     <section id="header">
         <nav>
-      <h2 style="color:white"><img class="logo-img" src="car_logo.png" width="20%" height="20%">eFuel Car</h2>
-         <div class="menu-bar">
-        <ul>
-            <input type="text" placeholder="Type here to search">
-            <input type="button" placeholder="Search">
-            <li><a href="mainpage.html">HOME</a></li>
-            <li><a href="team.html">TEAM</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contactus.html">CONTACT</a></li>
-        </ul>
-    </div>
-</nav>
-<h1 style="color:white" align="center" >GALLERY</h1>
-<h3 style="color: aquamarine;"> <center>Glad to see you here, Take a look on different models from different companies<br>
-         You can click on the image to get more information about selected model from web.<br>
-        Have A Look!</center>
-    </h3>
-    <center>
-    <a href="https://www.nissanusa.com/vehicles/electric-cars/leaf.html" title="NISSAN LEAF" target="_blank"><img src="NISSAN.jpg" height="200px" width="24%"></a>
-    <a href="https://www.chevrolet.com/electric/bolt-ev" title="CHEVROLET BOLT EV" target="_blank"><img src="OIP (12).jpg" height="200px" width="24%"></a>
-    <a href="https://www.tesla.com/modelx" title="TESLA Model-X" target="_blank"><img src="Tesla.jpg" height="200px" width="24%"></a>
-    <a href="https://www.audi.com/en/experience-audi/models-and-technology/production-models/q4-etron.html" title="AUDI Q4-etron" target="_blank"><img src="OIP (13).jpg" height="200px" width="24%"></a>
-    <a href="https://en.wikipedia.org/wiki/Volkswagen_BUDD-e" title="VOLKSWAGEN BUDD-e" target="_blank"><img src="ElectricCars.jpg" height="200px" width="24%"></a>
-    <a href="https://www.nio.com/visioncar" title="NIO (concept)" target="_blank"><img src="Ecar.jpg" height="200px" width="24%"></a>
-    <a href="https://www.tesla.com/models" title="TESLA Model-S" target="_blank"><img src="OIP.jpg" height="200px" width="24%"></a>
-    <a href="https://www.jaguar.in/jaguar-range/i-pace/index.html" title="JAGUAR I-PACE" target="_blank"><img src="OIP (1).jpg" height="200px" width="24%"></a>
-    <a href="https://www.autoexpress.co.uk/electric-cars/95371/dyson-car-revealed-full-time-called-electric-suv-project" title="Dyson E-SUV Project" target="_blank"><img src="OIP (2).jpg" height="200px" width="24%"></a>
-    <a href="https://en.wikipedia.org/wiki/Toyota_Prius_Plug-in_Hybrid" title="TOYOTA Plug-in Hybrid" target="_blank"><img src="OIP (3).jpg" height="200px" width="24%"></a>
-    <a href="https://global.honda/innovation/technology/automobile/electric-vehicles.html" title="Honda E-Car" target="_blank"><img src="OIP (4).jpg" height="200px" width="24%"></a>
-    <a href="https://en.wikipedia.org/wiki/Mercedes-Benz_EQ#:~:text=Mercedes-Benz%20EQC%20is%20based%20on%20the%20X253%20GLC-Class,utility%20vehicle%20%28SUV%29%20and%20was%20released%20in%202019." title="MERCEDES Benz EQ" target="_blank"><img src="OIP (5).jpg" height="200px" width="24%"></a>
-    <a href="https://www.nissanusa.com/ariya.html" title="NISSAN ARIYA" target="_blank"><img src="OIP (6).jpg" height="200px" width="24%"></a>
-    <a href="https://www.zricks.com/Updates/Car-Charging-points-for-eco-friendly-environment-at-Provident-Too-Good-Homes-Bangalore/6164" title="E-car And it's Charging Point" target="_blank"><img src="download.jpg" height="200px" width="24%"></a>
-    <a href="https://www.livekindly.co/volvo-vegan-electric-car/" title="VOLVO VEGAN E-car" target="_blank"><img src="OIP (7).jpg" height="200px" width="24%"></a>
-    <a href="https://www.carwale.com/news/bmw-i5-rendered/" title="BMW I5" target="_blank"><img src="OIP (8).jpg" height="200px" width="24%"></a>
-    <a href="https://www.lucidmotors.com/air" title="LUCID AIR" target="_blank"><img src="OIP (9).jpg" height="200px" width="24%"></a>
-    <a href="https://www.autocarindia.com/car-reviews/toyota-eq-review-test-drive-416187" title="TOYOTA EQ" target="_blank"><img src="OIP (10).jpg" height="200px" width="24%"></a>
-    <a href="https://jericof.com/" title="VOLKSWAGEN ID BUGGY" target="_blank"><img src="OIP (11).jpg" height="200px" width="24%"></a>
-    <a href="https://allcarbrandslist.com/reviews/electric-car-brands/" title="E-car Brands" target="_blank"><img src="Electric-Car-Brands.jpg" height="200px" width="24%"></a>
-</center>
-<br><br>
-<div class="footer">
-<div class="container">
-<div class="row">
+            <h2 style="color:white"><img class="logo-img" src="car_logo.png" width="20%" height="20%">eFuel Car</h2>
+            <div class="menu-bar">
+                <ul>
+                    <input type="text" placeholder="Type here to search">
+                    <input type="button" placeholder="Search">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 style="color:white" align="center">GALLERY</h1>
+        <h3 style="color: aquamarine;">
+            <center>Glad to see you here, Take a look on different models from different companies<br>
+                You can click on the image to get more information about selected model from web.<br>
+                Have A Look!</center>
+        </h3>
+        <center>
+            <a href="https://cars.tatamotors.com/punch/ice/specifications.html" title=""><img
+                    src="https://imgd.aeplcdn.com/0x0/n/cw/ec/39015/punch-exterior-right-front-three-quarter-2.jpeg?isig=0"
+                    height="200px" width="24%"></a>
+            <a href="https://cars.tatamotors.com/punch/ice/specifications.html" title=""><img src="https://th.bing.com/th/id/OIP.9-HwdxCJmKuZATkmbdCjEgAAAA?rs=1&pid=ImgDetMain" height="200px" width="24%"></a>
+            <a href="https://cars.tatamotors.com/punch/ice/specifications.html" title=""><img src="https://th.bing.com/th/id/OIP.bT9coMZb5OE0wvqcda_GwQAAAA?rs=1&pid=ImgDetMain" height="200px" width="24%"></a>
+            <a href="https://cars.tatamotors.com/punch/ice/specifications.html" title=""><img src="https://motoroctane.com/wp-content/uploads/2024/01/1-1.png" height="200px" width="24%"></a>
+            <br><br>
+            <a href="https://tmlcars.tatamotors.com/suv/nexon/specifications" title="VOLKSWAGEN BUDD-e"><img
+                    src="https://img.onmanorama.com/content/dam/mm/en/business/autos/images/2020/8/28/tata-nexon-ev.jpg"
+                    height="200px" width="24%"></a>
+            <a href="https://tmlcars.tatamotors.com/suv/nexon/specifications" title=""><img src="https://img.indianauto.com/2021/01/07/ZUwJ9d0r/tata-nexon-ev-front-angle-b55c.jpg" height="200px" width="24%"></a>
+            <a href="https://tmlcars.tatamotors.com/suv/nexon/specifications" title=""><img src="https://ic1.maxabout.us/autos/cars_india/N/2020/10/new-tata-nexon-front-3-quarter-view.jpg" height="200px" width="24%"></a>
+            <a href="https://tmlcars.tatamotors.com/suv/nexon/specifications" title=""><img src="https://im.rediff.com/money/2019/dec/19tata-nexon-ev1.jpg?w=670&h=900" height="200px" width="24%"></a>
+            <br><br>
+            <a href="https://cars.tatamotors.com/harrier/ice/specifications.html" title=""><img
+                    src="https://www.rushlane.com/wp-content/uploads/2020/03/2020-tata-harrier-bs6-specs-features-new-3.jpg"
+                    height="200px" width="24%"></a>
+            <a href="https://cars.tatamotors.com/harrier/ice/specifications.html" title=""><img src="https://img.onmanorama.com/content/dam/mm/en/news/business/images/2023/1/13/harrier-ev.jpg" height="200px" width="24%"></a>
+            <a href="https://cars.tatamotors.com/harrier/ice/specifications.html" title=""><img src="https://www.autodevot.com/wp-content/uploads/2023/01/Tata-Harrier-EV.jpg" height="200px" width="24%"></a>
+            <a href="https://cars.tatamotors.com/harrier/ice/specifications.html" title=""><img src="https://static.toiimg.com/thumb/msid-101428413,width-1070,height-580,imgsize-1157968,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" height="200px" width="24%"></a>
+            <br><br>
+            <a href="https://cars.tatamotors.com/tigor/ice/specifications.html" title=""><img
+                    src="https://th.bing.com/th/id/OIP.CEiZGnhrhLaObDSDPq0mYwAAAA?rs=1&pid=ImgDetMain" height="200px"
+                    width="24%"></a>
+            <a href="https://cars.tatamotors.com/tigor/ice/specifications.html" title=""><img src="https://cdni.autocarindia.com/ExtraImages/20221123112607_Tigor_EV_update.jpg" height="200px" width="24%"></a>
+            <a href="https://cars.tatamotors.com/tigor/ice/specifications.html" title=""><img src="https://stat.overdrive.in/wp-content/odgallery/2019/06/52826_tata_tigor_ev_002.jpg" height="200px" width="24%"></a>
+            <a href="https://cars.tatamotors.com/tigor/ice/specifications.html" title=""><img src="https://cdni.autocarindia.com/ExtraImages/20211013121851_Tigor_EV_main.jpg" height="200px" width="24%"></a>
+            <br><br>
+            <a href="https://cars.tatamotors.com/tiago/ice/specifications.html" title=""><img
+                    src="https://images0.cardekho.com/images/car-images/large/Tata/Tata-Tiago/4614/Tata-Tiago_Sunburst-Orange_c4691e.jpg"
+                    height="200px" width="24%"></a>
+            <a href="https://cars.tatamotors.com/tiago/ice/specifications.html" title=""><img src="https://images.hindustantimes.com/img/2022/09/28/1600x900/tiago_1664352635402_1664352635613_1664352635613.JPG" height="200px" width="24%"></a>
+            <a href="https://cars.tatamotors.com/tiago/ice/specifications.html" title=""><img src="https://cdni.autocarindia.com/ExtraImages/20220928120055_WhatsApp%20Image%202022_09_28%20at%2011.58.44%20AM.jpg" height="200px" width="24%"></a>
+            <a href="https://cars.tatamotors.com/tiago/ice/specifications.html" title=""><img src="https://www.carblogindia.com/wp-content/uploads/2016/07/tata-tiago-aktiv-front-angle-696x392.jpg" height="200px" width="24%"></a>
+        </center>
+        <br><br>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
 
-<div class="cols-2">
-<h3><img src="car_logo.png" width="20%" height="30%" >eFuel Car</h3>
-<br><h4><u>For media inquiries, please email us at mediainquiries@efuel.org.<br>Range according to WLTP cycle. Driving range may vary slightly<br> depending on road conditions, your driving style and the temperature.<br> It is also is dependent on the type of tyres equipped. </u></h4>
-</div>
+                    <div class="cols-2">
+                        <h3><img src="car_logo.png" width="20%" height="30%">eFuel Car</h3>
+                        <br>
+                        <h4><u>For media inquiries, please email us at mediainquiries@efuel.org.<br>Range according to
+                                WLTP cycle. Driving range may vary slightly<br> depending on road conditions, your
+                                driving style and the temperature.<br> It is also is dependent on the type of tyres
+                                equipped. </u></h4>
+                    </div>
 
-<div class="cols-1">
-<ul><li>Website terms and condition </li>
-<li> Privacy notice and policy </li> 
-<li>Accessibility </li>
-<li> Side-map</li></ul>
-</div>
-<div class="cols-3">
-<h3>Contact us</h3>
-<ul>
-<li> 022 7856 4885</li>
-<li>+91 78957 65985 </li>
-<li>efuel@gmail.com</li>
-<li>Contact in between 9AM to 10PM</li>
-</ul>
-</div>
+                    <div class="cols-1">
+                        <ul>
+                            <li>Website terms and condition </li>
+                            <li> Privacy notice and policy </li>
+                            <li>Accessibility </li>
+                            <li> Side-map</li>
+                        </ul>
+                    </div>
+                    <div class="cols-3">
+                        <h3>Contact us</h3>
+                        <ul>
+                            <li> 1800 209 8282</li>
+                            <li>+91 97660 82222 </li>
+                            <li>customercare@tatamotors.com</li>
+                            <li>Contact in between 9AM to 10PM</li>
+                        </ul>
+                    </div>
 
-<div class="cols-4">
-<ul>
-<li>HOME</li>
-<li>TEAM</li>
-<li>GALLERY</li>
-<li>ABOUT</li>
-<li>CONTACT</li>
-</ul>
-</div>
-</div>
-</div>
-<br>
-<hr>
-<br>
-<h4 style="color:white" align="center">Copyright 2021-TCET-Inhouseinternship</h4>
-</div>
+                    <div class="cols-4">
+                        <ul>
+                            <li>HOME</li>
+                            <li>TEAM</li>
+                            <li>GALLERY</li>
+                            <li>ABOUT</li>
+                            <li>CONTACT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h4 style="color:white" align="center">Copyright 2024-TCET-Inhouseinternship</h4>
+        </div>
 
 </body>
+
 </html>

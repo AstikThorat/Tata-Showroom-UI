@@ -23,7 +23,7 @@ body{
   border-radius: 10px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, .2);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(50px);
   box-shadow: 0 0 20px black;  
 }
 
@@ -84,7 +84,8 @@ body{
 .a3 a{
   margin-right:40px ;
   text-decoration: none;
-  color: white;
+  color: darkblue;
+  font-size: 17px;
 }
 
 .btn{ 
@@ -106,5 +107,6 @@ body{
 
 .a4 a{
   text-decoration: none;
-  color: white;
+  color: darkblue;
+  font-size: 17px;
 }

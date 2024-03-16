@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+} 
+
+body{
+    height: 100vh;
+    /* background-image: url("https://gaadiwaadi.com/wp-content/uploads/2020/04/tata-hbx-hornbill-4.jpg"); */
+    /* backdrop-filter: blur(10px); */
+}
+
+#ab1{
+    display: flex;
+    justify-content: center;   
+}
+
+.ab2{     
+    width: 900px;
+     /* border: 2px solid red;  */
+    height: 750px;
+    /* margin-top:150px; */
+    background-color:rgb(39, 37, 37);
+}
+
+.ab3{     
+    width: 700px;
+    /* border: 2px solid red;  */
+    height:695px;
+    /* margin-top:150px; */   
+}
+
+.ab3 img{
+    height: 685px;
+    width: 690px;     
+}
+
+.he1{
+    margin-top: 20px;
+    margin-left: 15px;
+    color:darkred;
+}
+
+.para1{    
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right:60px;
+    color: white;
+}
+
+.ab2 img{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid black;
+}
+.he2{ 
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.he3{
+    margin-top: 40px;
+    margin-left: 15px; 
+    color:darkred;
+}
+
+.para2{
+    text-align: center;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h1{
+    color: white;
+}

@@ -24,7 +24,8 @@
     display: flex;
     /* border: blue solid 3px; */
     width: 470px;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 12px;
 }
 
 #nav3{
@@ -61,10 +62,13 @@
     margin-top: 3px;
     border-radius: 50%;
 }
+
 .im2{
     text-decoration: none;
     font-size: 18px;
-    margin-top: 40px;
+    margin-top: 60px;
+    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 .c2{
@@ -174,8 +178,10 @@ ul li:hover ul.dropdown {
 }
 
 .c5{
-    padding-top: 10px;
-        /* border-radius: 20px; */
+    /* padding-top: 5px;
+    padding-left: 30px; */
+     /* border-radius: 20px; */
+     margin-top: 10px;
 }
 a{
     text-decoration: none;

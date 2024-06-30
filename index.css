@@ -19,7 +19,7 @@
     height: 80px; 
     border-radius: 10px; 
 }
-/* --------------------------------- */
+
 .dropdown {
     display: inline-block;
     position: relative;
@@ -56,12 +56,12 @@ button:hover {
     background-color: #45373782;
     border-radius: 10px;
 }
-  /* -------------------------- */
+  
 
 #nav2{
     display: flex;
     /* border: blue solid 3px; */
-    width: 470px;
+    width: 490px;
     justify-content: space-around;
     margin-bottom: 12px;
 }
@@ -216,11 +216,15 @@ ul li:hover ul.dropdown {
 }
 
 .c5{
-    /* padding-top: 5px;
-    padding-left: 30px; */
-     /* border-radius: 20px; */
-     margin-top: 10px;
+    padding-top: 15px;
+    width: 70px;
+    text-align: center;
 }
+
+.c5 a{
+    font-size: 21px;
+}
+
 a{
     text-decoration: none;
 }

@@ -7,47 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form For Registration</title>
     <link rel="stylesheet" href="Registration.css">
+    <link rel="stylesheet" href="./index.css">
     <!-- Fontawesome CDN Link For Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 
 <body>
-    <form action="thank-you.html" class="a1">
-        <h2>Registration</h2>
-        <div class="form-group fullname">
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" placeholder="Enter your full name">
-        </div>
-        <div class="form-group email">
-            <label for="email">Email Address</label>
-            <input type="text" id="email" placeholder="Enter your email address">
-        </div>
-        
-        <div class="form-group date">
-            <label for="date">Birth Date</label>
-            <input type="date" id="date" placeholder="Select your date">
-        </div>
-        <div class="form-group gender">
-            <label for="gender">Gender</label>
-            <select id="gender">
-                <option value="" selected disabled>Select your gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Other">Other</option>
-            </select>
+    <div id="main1">
+        <div class="head1">
+            <nav id="nav1" class="navbar navbar-expand-lg navbar-dark fixed-top mynav">
+
+                <div class="c1">
+          
+                  <img src="https://image.cnbcfm.com/api/v1/image/22588379-tata.jpg?v=1354732729&w=1600&h=900" class="im"
+                    height="60px">
+                </div>
+          
+                <ul class="c2">
+          
+                  <a href="#" class="line">HOME</a>
+                  <a href="./Upcomming.html" class="line">UPCOMMING</a>  
+          
+                  <div class="dropdown">
+                    <a href="./Electric.html" class="line">ELECTRIC CARS</a>
+                    <div class="dropdown-options">
+                      <a href="#">Harrier.ev</a>
+                      <a href="#">Punch.ev</a>
+                      <a href="#">Nexon.ev</a>
+                      <a href="#">Tiago.ev</a>
+                      <a href="#">Tigor.ev</a>
+                    </div>
+                  </div>
+          
+                  <a href="./about.html" class="line">ABOUT US</a>
+                </ul>
+          
+                <div id="nav2">
+                  <div class="c3">
+                    <input type="text" class="c4" placeholder="Search Car Name">
+                    <button type="submit" class="c6">Search</button>
+                  </div>
+          
+                  <div class="c5">
+                    <!-- <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnP7z4eskALryqEiK8X47vkR9-wpDMXwcVGZAWLbrPrDR4JM_tiDyZyTJhrsFyX8kRvRM&usqp=CAU"
+                      height="40px" class="im1" width="40px" alt=""> -->
+                  
+                      <a href="./login.html" class="im2">LOGIN</a>
+                    
+                  </div>
+                </div>
+          
+              </nav>
         </div>
 
-        <div class="form-group password">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password">
-            <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
-        </div>
+        <div>
+        <!-- Registration -->
+        <form action="thank-you.html" class="a1">
+            <h2>Registration</h2>
+            <div class="form-group fullname">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Enter your full name">
+            </div>
+            <div class="form-group email">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" placeholder="Enter your email address">
+            </div>
 
-        <div class="form-group submit-btn">
-            <input type="submit" value="Submit">
-        </div>
-    </form>
+            <div class="form-group date">
+                <label for="date">Birth Date</label>
+                <input type="date" id="date" placeholder="Select your date">
+            </div>
+            <div class="form-group gender">
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option value="" selected disabled>Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
 
+            <div class="form-group password">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
+            </div>
+
+            <div class="form-group submit-btn">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    </div>
     <script src="Registration.js"></script>
 </body>
 

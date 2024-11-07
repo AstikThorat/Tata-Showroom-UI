@@ -18,9 +18,16 @@ body {
   background-size: cover;
 }
 
+
+.head1{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .a1{
-  /* width: 330px;
-  height: 350px; */
+  width: 350px;
+  height: 535px;
   /* background-color: black; */
   color: white;
   border-radius: 10px;
@@ -31,7 +38,7 @@ body {
 }
 
 form {
-  padding: 25px;
+  padding: 5px;
   background: #fff;
   max-width: 450px;
   width: 100%;
@@ -46,7 +53,7 @@ form h2 {
 }
 
 form .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -58,13 +65,13 @@ form label {
 
 form input,
 form select {
-  height: 45px;
+  height: 40px;
   padding: 10px;
   width: 100%;
-  font-size: 15px;
+  font-size: 14px;
   outline: none;
-  background: #fff;
-  border-radius: 3px;
+  /* background: #fff; */
+  border-radius: 10px;
   border: 1px solid #bfbfbf;
 }
 
@@ -110,13 +117,12 @@ form .password i {
   height: auto;
   font-size: 16px;
   padding: 13px 0;
-  border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
   text-align: center;
   background: #1BB295;
   transition: 0.2s ease;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .submit-btn input:hover {
